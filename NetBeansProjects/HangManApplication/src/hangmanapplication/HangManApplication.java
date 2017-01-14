@@ -54,6 +54,7 @@ public class HangManApplication {
                 while (game.isGuessedAlready(guess)){
                     System.out.println("Try again! You've already guessed that character.");
                     guess = (sc.next().toLowerCase()).charAt(0);
+                    System.out.println("Previous guesses" + game.previousGuesses);
                 }
                 
                 //Play the guess
